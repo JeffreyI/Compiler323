@@ -1,12 +1,10 @@
-function getLit [b:real] {
-  if (x > h) 
-      return x;
-  else 
-      return h;
-  endif
+%%
+int i, max, sum;
+sum = 0;
+i = 1;
+get(max);
+while (i < max) {
+	sum = sum + i;
+	i = i + 1;
 }
-%%  
-  
-int a;
-real c;
-boolean foolean;
+put(sum + max);
