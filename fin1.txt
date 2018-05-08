@@ -1,10 +1,14 @@
-%%
-int i, max, sum;
-sum = 0;
-i = 1;
-get(max);
-while (i < max) {
-	sum = sum + i;
-	i = i + 1;
+function sum$ [a:int, b:int ] {
+    return a + b;
 }
-put(sum + max);
+function swap [value:boolean] {
+    if ( value < true ) return false;
+    else return true; endif
+}
+%%
+int a, x, y;
+get (a);
+
+if (x < y) 
+    return x;
+endif

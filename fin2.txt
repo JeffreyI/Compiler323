@@ -1,32 +1,12 @@
-%%
-
-int a,b,c,d,e,sum$;
-boolean val;
-
-int blah;
-	
-put ( sum$ );
-	
-put ( a - b ); 
-
-val = false;
-
-blah = 5.5;
-
-while ( blah > 3 ) 
-{
-    
-	put ( blah );
-    
-	blah = blah - 1;
-
+function getLit [x:int, h:int] {
+  if (x > h) 
+      return x;
+  else 
+      return h;
+  endif
 }
-
-
-
-if ( a == 4 ) put ( a ); endif
-if ( b => 3 ) put ( b ); endif
-if ( c =< 2 ) put ( c ); endif
-if ( d ^= 1 ) put ( 9001 ); endif
-if ( e > 0 ) put (true);
-else put (false); endif
+%%  
+  
+int a;
+real c;
+boolean foolean;
